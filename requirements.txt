@@ -1,0 +1,4 @@
+streamlit==0.80.0
+cassava-classifier==0.0.2
+albumentations==0.5.2 
+numpy==1.20.2 
