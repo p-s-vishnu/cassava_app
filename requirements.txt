@@ -1,3 +1,6 @@
 numpy==1.20.2
+https://download.pytorch.org/whl/cpu/torch-1.6.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.7.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
 streamlit==0.80.0
+python-multipart==0.0.5
 cassava-classifier==0.0.2 
