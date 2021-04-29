@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    api:
+        build: api/
+        expose: 
+            - "8003"
+        ports: 
+            - "8003:8003"
+        command: gunicorn main:app --bind 0.0.0.0:8003 --timeout 1200 -w 1 -k uvicorn.workers.UvicornWorker
+        volumes: 
+            - api/:api/
+
