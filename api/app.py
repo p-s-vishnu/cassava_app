@@ -36,9 +36,6 @@ app.add_middleware(
 )
 
 
-host_port = 8003
-
-
 @app.post("/predict")
 async def predict_disease(file: UploadFile = File(...)):
     image = Image.open(file.file)
@@ -48,4 +45,4 @@ async def predict_disease(file: UploadFile = File(...)):
 
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=host_port, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8003, reload=True)
