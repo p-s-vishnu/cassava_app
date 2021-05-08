@@ -36,7 +36,7 @@ def make_prediction(image, model):
 if file is None:
     st.text("Please Upload an image file")
 else:
-    image = Image.open(file)
+    image = Image.open(file).convert('RGB')
     st.image(image, use_column_width=True)
     prediction = make_prediction(image=image, model=model)
     st.json(prediction)
