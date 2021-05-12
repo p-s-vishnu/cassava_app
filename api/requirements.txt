@@ -6,4 +6,4 @@ torchvision==0.9.1+cpu
 fastapi==0.63.0
 python-multipart==0.0.5
 uvicorn==0.13.4
-cassava-classifier==0.0.2
+cassava-classifier==0.0.3

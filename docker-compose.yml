@@ -11,7 +11,7 @@ services:
     web-service:
         build: web/
         expose: 
-            - "8004"
+            - "8501"
         ports: 
-            - "80:8004"
-        command: streamlit run web/app.py
+            - "8501:8501"
+        command: streamlit run app.py
