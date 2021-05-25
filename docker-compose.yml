@@ -1,0 +1,17 @@
+version: '3'
+services: 
+    api-service:
+        image: psvishnu/cassava_api:v2
+        expose: 
+            - "8003"
+        ports: 
+            - "8003:8003"
+        command: gunicorn app:app --bind 0.0.0.0:8003 --timeout 1200 -w 1 -k uvicorn.workers.UvicornWorker
+
+    web-service:
+        image: psvishnu/cassava_web:v2
+        expose: 
+            - "8501"
+        ports: 
+            - "8501:8501"
+        command: streamlit run app.py
